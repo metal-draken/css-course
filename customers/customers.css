@@ -13,16 +13,19 @@ main {
 }*/
 
 .testimonial__image-container {
-  width: 100%;
+  width: 60%;
   max-width: 40rem;
   /*min-width: 350px;*/
-
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  transform: skewX(20deg);
+  overflow: hidden;
 }
 
 .testimonial__image {
   width: 100%;
   vertical-align: top;
+  transform: skewX(-20deg);
+  transform: scale(1.2);
 }
 
 .testimonial__info {

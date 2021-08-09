@@ -36,6 +36,7 @@
   vertical-align: middle;
   color: white;
   position: relative;
+  overflow: hidden;
 }
 
 .package:hover,
@@ -71,6 +72,10 @@
   font-size: 20px;
 }
 
+.package h3 {
+  font-size: 0.9rem;
+}
+
 .clearfix {
   clear: both;
 }
@@ -84,10 +89,13 @@
   top: 0px;
   right: 0px;
   margin: 0;
-  font-size: 0.75rem;
   color: white;
   background: #ff5454;
   padding: 8px;
+  transform: rotateZ(45deg) translateX(8rem) translateY(-5rem);
+  transform-origin: center;
+  width: 25rem;
+  text-align: center;
 }
 
 #free {
@@ -125,7 +133,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 40rem) {
   .package {
     border-left: 2px black solid;
   }
@@ -135,5 +143,12 @@
   #free:hover,
   #free:active {
     border-right-color: #ff5454;
+  }
+  .package_badge {
+    transform: rotateZ(45deg) translateX(8rem) translateY(-4rem);
+    transform-origin: center;
+  }
+  .package h3 {
+    font-size: 1.2rem;
   }
 }
