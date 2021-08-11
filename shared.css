@@ -48,6 +48,8 @@ main {
   background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: opacity 200ms linear;
   display: none;
 }
 
@@ -129,6 +131,11 @@ main {
   border-bottom: 0.3rem solid white;
 }
 
+.main-nav_item-cta {
+  animation: wiggle 200ms 1s alternate;
+  animation-iteration-count: 10;
+}
+
 .main-nav_item-cta a,
 .mobile-nav__item--cta a {
   color: white;
@@ -147,7 +154,9 @@ main {
 }
 
 .mobile-nav {
-  display: none;
+  /*display: none;*/
+  transform: translateX(-100%);
+  transition: tra nsform 300ms ease-out;
   position: fixed;
   z-index: 101;
   top: 0;
@@ -285,4 +294,15 @@ main {
 
 .open {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
 }

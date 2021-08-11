@@ -152,3 +152,19 @@
     font-size: 1.2rem;
   }
 }
+
+.package:hover {
+  animation: movepackage 1s 0.1s ease-out forwards;
+}
+
+@keyframes movepackage {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}
