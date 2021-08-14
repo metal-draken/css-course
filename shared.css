@@ -68,9 +68,6 @@ main {
   top: 0px;
   z-index: 1;
   vertical-align: middle;
-  /*display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
